@@ -520,7 +520,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5f1e43f36d8214ebd4f483007d13f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angularV: {x: 0, y: 0, z: 15}
+  angularV: {x: 0, y: 20, z: 15}
+  torque: {x: 0, y: 0, z: 0}
 --- !u!54 &562193269
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -651,6 +652,7 @@ GameObject:
   - component: {fileID: 770416679}
   - component: {fileID: 770416683}
   - component: {fileID: 770416684}
+  - component: {fileID: 770416685}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -741,7 +743,7 @@ Transform:
   m_GameObject: {fileID: 770416678}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.29, y: 6.3243155, z: -2.0126622}
+  m_LocalPosition: {x: 14.05, y: 7.7, z: -2.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -781,11 +783,25 @@ ConstantForce:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770416678}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Force: {x: 0, y: 0, z: 0}
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!114 &770416685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770416678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b040b9a2dde684ca6484b34d4015be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: 15, y: 10, z: 2}
+  spin: {x: 0, y: 2, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
